@@ -107,7 +107,7 @@ function cmd_print_version() {
 }
 
 function cmd_print_help() {
-  echo "Usage: $(basename ""$0"") [OPTION]"
+  echo "Usage: $SCRIPTNAME [OPTION]"
   echo "$SCRIPT_TITLE v$SCRIPT_VERSION"
   echo " "
   echo "-v, --version           print version info and exit"
