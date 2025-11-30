@@ -21,8 +21,8 @@ easy installation.
 Download the release package and install on the device:
 
 ```bash
-wget https://github.com/aragon25/vnc-web/releases/download/v1.3-1/vnc-web_1.3-1_all.deb
-sudo apt install ./vnc-web_1.3-1_all.deb
+wget https://github.com/aragon25/vnc-web/releases/download/v1.4-1/vnc-web_1.4-1_all.deb
+sudo apt install ./vnc-web_1.4-1_all.deb
 ```
 
 ---

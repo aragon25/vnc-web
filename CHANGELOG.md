@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4-1] - TESTING
+
+### Added
+- Raspbian Trixie support
+
+### Fixed
+- usage text in help.
+
 ## [1.3-1] - 2025-11-24
 
 ### Removed

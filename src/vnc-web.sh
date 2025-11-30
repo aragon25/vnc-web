@@ -7,7 +7,7 @@
 
 #get some variables
 SCRIPT_TITLE="vnc-web"
-SCRIPT_VERSION="1.3"
+SCRIPT_VERSION="1.4"
 SCRIPTDIR="$(readlink -f "$0")"
 SCRIPTNAME="$(basename "$SCRIPTDIR")"
 SCRIPTDIR="$(dirname "$SCRIPTDIR")"
@@ -27,8 +27,8 @@ EXITCODE=0
 #!!!RUN RESTRICTIONS!!!
 #only for raspberry pi (rpi5|rpi4|rpi3|all) can combined!
 raspi="all"
-#only for Raspbian OS (bookworm|bullseye|all) can combined!
-rasos="bookworm|bullseye"
+#only for Raspbian OS (trixie|bookworm|bullseye|all) can combined!
+rasos="trixie|bookworm|bullseye"
 #only for cpu architecture (i386|armhf|amd64|arm64) can combined!
 cpuarch=""
 #only for os architecture (32|64) can NOT combined!
@@ -124,6 +124,7 @@ function do_check_start() {
     [[ "$rasos_v" =~ "Raspbian" ]] && [[ "$rasos" =~ "all" ]] && rasos_res="true"
     [[ "$rasos_v" =~ "Raspbian" ]] && [[ "$rasos_v" =~ "bullseye" ]] && [[ "$rasos" =~ "bullseye" ]] && rasos_res="true"
     [[ "$rasos_v" =~ "Raspbian" ]] && [[ "$rasos_v" =~ "bookworm" ]] && [[ "$rasos" =~ "bookworm" ]] && rasos_res="true"
+    [[ "$rasos_v" =~ "Raspbian" ]] && [[ "$rasos_v" =~ "trixie" ]] && [[ "$rasos" =~ "trixie" ]] && rasos_res="true"
     if [ "$rasos_res" == "false" ]; then
       echo "You need to run Raspbian OS ($rasos) to run this script! Can not continue with this script!"
       exit 1
