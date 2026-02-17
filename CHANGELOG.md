@@ -10,6 +10,9 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - usage text in help.
 
+### Changed
+- update to noVNC v1.6.0
+
 ## [1.3-1] - 2025-11-24
 
 ### Removed
